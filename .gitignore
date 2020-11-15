@@ -1,0 +1,7 @@
+*
+!*/
+!/LICENSE
+!/.gitignore
+!/setup.py
+!/app/**/*.py
+!/test/**/*.py
