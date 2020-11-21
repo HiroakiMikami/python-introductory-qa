@@ -7,3 +7,4 @@
 !/test/**/*.py
 !/tools/*.py
 !/setup.cfg
+!/configs/**/*.py

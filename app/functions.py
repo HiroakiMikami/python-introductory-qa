@@ -32,3 +32,8 @@ class TokenizeQuery:
                     else:
                         retval.append(Token(None, v, v))
         return retval
+
+
+class SplitValue:
+    def __call__(self, token: str) -> List[str]:
+        return [token]
