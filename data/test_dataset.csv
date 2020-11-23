@@ -1,0 +1,122 @@
+0,"print ""This line will be printed.""","print(""This line will be printed."")",0,https://www.learnpython.org/en/Hello%2C_World!
+1,"print ""Hello""","print(""Hello"")",1,https://www.learnpython.org/en/Hello%2C_World!
+2,"print ""x is 1."" if `x` is 1","x = 1
+if x == 1:
+   print(""x is 1."")",0,https://www.learnpython.org/en/Hello%2C_World!
+3,"print ""Hello"" if `cond` is met","if cond:
+   print(""Hello"")",1,https://www.learnpython.org/en/Hello%2C_World!
+4,set `myint` as 7,myint = 7,0,https://www.learnpython.org/en/Variables_and_Types
+5,set `myfloat` as 7.0,myfloat = 7.0,0,https://www.learnpython.org/en/Variables_and_Types
+6,set myfloat as 7.0,myfloat = float(7.0),0,https://www.learnpython.org/en/Variables_and_Types
+7,"set `mystring` as ""hello""","mystring = ""hello""",0,https://www.learnpython.org/en/Variables_and_Types
+8,"set `mystring` as ""hello world""","mystring = ""hello world""",0,https://www.learnpython.org/en/Variables_and_Types
+9,set `three` to `one` + `two`,three = one + two,0,https://www.learnpython.org/en/Variables_and_Types
+10,"concatenate ""hello"" and ""world""","""hello"" + ""world""",1,https://www.learnpython.org/en/Variables_and_Types
+11,set `a` as 3 and `b` as 4,"a, b = 3, 4",0,https://www.learnpython.org/en/Variables_and_Types
+12,print `a` and `b`,"print(a, b)",0,https://www.learnpython.org/en/Variables_and_Types
+13,set `mylist` as an empty list,mylist = [],0,https://www.learnpython.org/en/Lists
+14,append 1 to the last of `mylist`,mylist.append(1),0,https://www.learnpython.org/en/Lists
+15,append 2 to the last of `mylist`,mylist.append(2),0,https://www.learnpython.org/en/Lists
+16,add 3 to the last of `mylist`,mylist.append(3),0,https://www.learnpython.org/en/Lists
+17,get first element of `mylist`,mylist[0],0,https://www.learnpython.org/en/Lists
+18,get zero-th element of `mylist`,mylist[0],0,https://www.learnpython.org/en/Lists
+19,get 2-nd element of `mylist`,mylist[1],0,https://www.learnpython.org/en/Lists
+20,get 10-th element of `mylist`,mylist[9],0,https://www.learnpython.org/en/Lists
+21,"set `mylist` as list containing 1, 2, and 3","mylist = [1, 2, 3]",0,https://www.learnpython.org/en/Lists
+22,calculate 2 times 3,2 * 3,0,https://www.learnpython.org/en/Basic_Operators
+23,calculate 1 plus 1.5,1 +1.5,0,https://www.learnpython.org/en/Basic_Operators
+24,calculate 6 divided by 4,6 / 4,0,https://www.learnpython.org/en/Basic_Operators
+25,11 modulo3,11 % 3,0,https://www.learnpython.org/en/Basic_Operators
+26,7 to the power of 2,7**2,0,https://www.learnpython.org/en/Basic_Operators
+27,square of 7,7**2,0,https://www.learnpython.org/en/Basic_Operators
+28,2 cubed,2**3,0,https://www.learnpython.org/en/Basic_Operators
+29,"repead ""hello"" 10 times","""hello"" * 10",0,https://www.learnpython.org/en/Basic_Operators
+30,concatenate list a and list b,a + b,0,https://www.learnpython.org/en/Basic_Operators
+31,"repeat list of 1, 2, and 3 4 times","[1,2,3] * 4",0,https://www.learnpython.org/en/Basic_Operators
+32,repeat list of x and y 3 times,"[x, y] * 3",1,https://www.learnpython.org/en/Basic_Operators
+33,get length of `astring`,len(astring),1,https://www.learnpython.org/en/Basic_String_Operations
+34,"get the index of ""o"" in `astring `","astring.index(""o"")",0,https://www.learnpython.org/en/Basic_String_Operations
+35,"count the number of occurreences ""l"" in `astring`","astring.count(""l"")",0,https://www.learnpython.org/en/Basic_String_Operations
+36,get the substring from 4 th to 7 th elements of `astring`,astring[3:7],0,https://www.learnpython.org/en/Basic_String_Operations
+37,get the last element of `astring`,astring[-1],0,https://www.learnpython.org/en/Basic_String_Operations
+38,"get the substring from 4 th to 7 th elements of `astring`, skipping one character",astring[3:7:2],0,https://www.learnpython.org/en/Basic_String_Operations
+39,get 3rd character of `astring` from the end,astring[-3],0,https://www.learnpython.org/en/Basic_String_Operations
+40,reverse `astring`,astring[::-1],0,https://www.learnpython.org/en/Basic_String_Operations
+41,lower case of `astring`,astring.lower(),0,https://www.learnpython.org/en/Basic_String_Operations
+42,upper case of `astring`,astring.upper(),0,https://www.learnpython.org/en/Basic_String_Operations
+43,"whether `astring` starts with ""Hello""","astring.startswith(""Hello"")",0,https://www.learnpython.org/en/Basic_String_Operations
+44,"whether `astring` ends with ""xxx""","astring.endswith(""xxx"")",0,https://www.learnpython.org/en/Basic_String_Operations
+45,"split `astring` at "" ""","astring.split("" "")",1,https://www.learnpython.org/en/Basic_String_Operations
+46,split `astring` at a space,"astring.split("" "")",0,https://www.learnpython.org/en/Basic_String_Operations
+47,whether `x` is 2,x == 2,0,https://www.learnpython.org/en/Conditions
+48,whether `x` is not 2,x != 2,0,https://www.learnpython.org/en/Conditions
+49,whether `x` is greather than 2,x > 2,0,https://www.learnpython.org/en/Conditions
+50,"whether `name` is equal to ""John""","name == ""John""",0,https://www.learnpython.org/en/Conditions
+51,whether either `x` or `y` is true,x or y,1,https://www.learnpython.org/en/Conditions
+52,whether set of `x` contains `name`,name in x,1,https://www.learnpython.org/en/Conditions
+53,"whehter `name` is either ""John"" or ""Rick""","name in set([""John"", ""Rick""])",0,https://www.learnpython.org/en/Conditions
+54,"call `f` if `x` is met, call `g` if `y` is met, otherwise call `h`","if x:
+  f()
+elif y:
+  g()
+else:
+  h()",1,https://www.learnpython.org/en/Conditions
+55,"print ""foo"" if `x` is 2, otherwise print ""bar""","if x == 2:
+  print(""foo"")
+else:
+  print(""bar"")",0,https://www.learnpython.org/en/Conditions
+56,whether `x` equal `y` as instance,x is y,0,https://www.learnpython.org/en/Conditions
+57,`x` is not met,not x,0,https://www.learnpython.org/en/Conditions
+58,print each element of `primes`,"for prime inprimes:
+  print(prime)",0,https://www.learnpython.org/en/Loops
+59,repeat 5 times,"for i in range(5):
+  pass",1,https://www.learnpython.org/en/Loops
+60,"Let `prime` be an each element of `primes`, print `prime`","for prime inprimes:
+  print(prime)",,https://www.learnpython.org/en/Loops
+61,"Let `x` be an each integer between 3 and 5, print `x`","for x in range(3,6):
+  print(x)",0,https://www.learnpython.org/en/Loops
+62,"Let `x` be an each integer less than 5, print `x`","for x in range(5):
+  print(x)",0,https://www.learnpython.org/en/Loops
+63,"Let `x` be an each integer between 3 and 8 skipping one element, print `x`","for x in range(3,8,2):
+  print(x)",0,https://www.learnpython.org/en/Loops
+64,call `f` whle `x` is met,"while x:
+  f()",1,https://www.learnpython.org/en/Loops
+65,finish the loop if `count` is greater or equal to 5,"if count >= 5:
+  break",,https://www.learnpython.org/en/Loops
+66,skip the procedure if `x` is even,"if x % 2 == 0:
+  continue",0,https://www.learnpython.org/en/Loops
+67,call `g` if the loop is not executed,"while x:
+  pass
+else:
+  g()",1,https://www.learnpython.org/en/Loops
+68,"define `my_function`. The function prints ""Hello""","def my_function():
+  print(""Hello"")",1,https://www.learnpython.org/en/Functions
+69,"define `sum_two_numbers`. The function gets `a` and `b`, then return `a` plus `b`","def sum_two_number(a, b):
+  return a + b",0,https://www.learnpython.org/en/Functions
+70,set `spam` as1,span = 1,0,https://docs.python.org/3/tutorial/introduction.html
+71,"Assign ""string"" to `text`","text = ""string""",0,https://docs.python.org/3/tutorial/introduction.html
+72,2 plus 2,2 + 2,0,https://docs.python.org/3/tutorial/introduction.html
+73,5 times 6,5 * 6,0,https://docs.python.org/3/tutorial/introduction.html
+74,50 minus 30,50 - 30,0,https://docs.python.org/3/tutorial/introduction.html
+75,20 divided by 4,20 / 4,0,https://docs.python.org/3/tutorial/introduction.html
+76,8 divided by 5,8 / 5,0,https://docs.python.org/3/tutorial/introduction.html
+77,floor of 17 divided by 3,17 // 3,0,https://docs.python.org/3/tutorial/introduction.html
+78,the remainder of 10 by 3,10 % 3,0,https://docs.python.org/3/tutorial/introduction.html
+79,5 squared,5 ** 2,0,https://docs.python.org/3/tutorial/introduction.html
+80,2 to the power of 7,2 ** 7,0,https://docs.python.org/3/tutorial/introduction.html
+81,2.5 minus 1,2.5 - 1,0,https://docs.python.org/3/tutorial/introduction.html
+82,the character in position 0 of `word`,word[0],0,https://docs.python.org/3/tutorial/introduction.html
+83,the character in position 5 of `word`,word[5],0,https://docs.python.org/3/tutorial/introduction.html
+84,the last character of `word`,word[-1],0,https://docs.python.org/3/tutorial/introduction.html
+85,the second last character of `word`,word[-2],0,https://docs.python.org/3/tutorial/introduction.html
+86,the characters from position 0 to 2 of `word`,word[0:2],0,https://docs.python.org/3/tutorial/introduction.html
+87,the characters from position 2 to 5 of `word`,word[2:5],0,https://docs.python.org/3/tutorial/introduction.html
+88,the character from the beginning to position 2 of `word`,word[:2],0,https://docs.python.org/3/tutorial/introduction.html
+89,the chacaters from position 4 to the end of `word`,word[4:],0,https://docs.python.org/3/tutorial/introduction.html
+90,the length of `word`,len(word),0,https://docs.python.org/3/tutorial/introduction.html
+91,"the list containing 1, 4, 9, 16, and 25","[1, 4, 9, 16, 25]",0,https://docs.python.org/3/tutorial/introduction.html
+92,the element of position 0 of `squares`,squares[0],0,https://docs.python.org/3/tutorial/introduction.html
+93,the last element of `squares`,squares[-1],0,https://docs.python.org/3/tutorial/introduction.html
+94,the elements from position 1 to 3 of `squares`,squares[1:3],1,https://docs.python.org/3/tutorial/introduction.html
+95,replace the position 3 of `squares` with 64,squares[3] = 64,0,https://docs.python.org/3/tutorial/introduction.html
+96,add the 216 to `cubes`,cubes.append(216),0,https://docs.python.org/3/tutorial/introduction.html

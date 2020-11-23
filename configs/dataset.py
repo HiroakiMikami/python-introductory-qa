@@ -23,7 +23,10 @@ test_dataset = mlprogram.utils.data.transform(
     ),
     transform=normalize_dataset
 )
-valid_dataset = None  # TODO
+valid_dataset = mlprogram.utils.data.transform(
+    dataset=ValidDataset(),
+    transform=normalize_dataset
+)
 
 metrics = {
     "accuracy": mlprogram.metrics.Accuracy(),

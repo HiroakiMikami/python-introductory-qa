@@ -8,3 +8,4 @@
 !/tools/*.py
 !/setup.cfg
 !/configs/**/*.py
+!/data/*.csv
