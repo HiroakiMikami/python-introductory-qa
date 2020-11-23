@@ -1,6 +1,6 @@
 imports = ["base.py"]
 device = torch.device(
-    type_str="cpu",
+    type_str="cuda",
     index=0,
 )
 transform = mlprogram.functools.Sequence(
