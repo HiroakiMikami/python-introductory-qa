@@ -1,7 +1,6 @@
 0,"print ""This line will be printed.""","print(""This line will be printed."")",0,https://www.learnpython.org/en/Hello%2C_World!
 1,"print ""Hello""","print(""Hello"")",1,https://www.learnpython.org/en/Hello%2C_World!
-2,"print ""x is 1."" if `x` is 1","x = 1
-if x == 1:
+2,"print ""x is 1."" if `x` is 1","if x == 1:
    print(""x is 1."")",0,https://www.learnpython.org/en/Hello%2C_World!
 3,"print ""Hello"" if `cond` is met","if cond:
    print(""Hello"")",1,https://www.learnpython.org/en/Hello%2C_World!
@@ -30,7 +29,7 @@ if x == 1:
 26,7 to the power of 2,7**2,0,https://www.learnpython.org/en/Basic_Operators
 27,square of 7,7**2,0,https://www.learnpython.org/en/Basic_Operators
 28,2 cubed,2**3,0,https://www.learnpython.org/en/Basic_Operators
-29,"repead ""hello"" 10 times","""hello"" * 10",0,https://www.learnpython.org/en/Basic_Operators
+29,"repeat ""hello"" 10 times","""hello"" * 10",0,https://www.learnpython.org/en/Basic_Operators
 30,concatenate list a and list b,a + b,0,https://www.learnpython.org/en/Basic_Operators
 31,"repeat list of 1, 2, and 3 4 times","[1,2,3] * 4",0,https://www.learnpython.org/en/Basic_Operators
 32,repeat list of x and y 3 times,"[x, y] * 3",1,https://www.learnpython.org/en/Basic_Operators
@@ -50,7 +49,7 @@ if x == 1:
 46,split `astring` at a space,"astring.split("" "")",0,https://www.learnpython.org/en/Basic_String_Operations
 47,whether `x` is 2,x == 2,0,https://www.learnpython.org/en/Conditions
 48,whether `x` is not 2,x != 2,0,https://www.learnpython.org/en/Conditions
-49,whether `x` is greather than 2,x > 2,0,https://www.learnpython.org/en/Conditions
+49,whether `x` is greater than 2,x > 2,0,https://www.learnpython.org/en/Conditions
 50,"whether `name` is equal to ""John""","name == ""John""",0,https://www.learnpython.org/en/Conditions
 51,whether either `x` or `y` is true,x or y,1,https://www.learnpython.org/en/Conditions
 52,whether set of `x` contains `name`,name in x,1,https://www.learnpython.org/en/Conditions
