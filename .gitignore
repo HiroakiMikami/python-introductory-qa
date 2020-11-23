@@ -9,3 +9,4 @@
 !/setup.cfg
 !/configs/**/*.py
 !/data/*.csv
+!/tools/*.ipynb
