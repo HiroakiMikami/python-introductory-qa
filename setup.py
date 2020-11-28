@@ -1,3 +1,4 @@
+import os
 from setuptools import find_packages, setup
 
 requires = [
@@ -23,5 +24,10 @@ setup(
     install_requires=requires,
     test_requires=extras["test"],
     extras_require=extras,
-    packages=find_packages(),
+    packages=find_packages() + [
+        "character_bert",
+        os.path.join("character_bert", "modeling"),
+        os.path.join("character_bert", "metrics"),
+        os.path.join("character_bert", "utils"),
+    ],
 )

@@ -10,3 +10,4 @@
 !/configs/**/*.py
 !/data/*.csv
 !/tools/*.ipynb
+!/character_bert
