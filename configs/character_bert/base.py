@@ -18,7 +18,9 @@ params = {
     "metric_threshold": 1.0,
     "metric": "bleu@5",
     "n_evaluate_process": 2,
-    "max_query_length": 128
+    "max_query_length": 128,
+    "train_timeout_sec": 30,
+    "evaluate_timeout_sec": 120,
 }
 
 extract_reference = TokenizeQuery()

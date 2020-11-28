@@ -9,7 +9,10 @@ main = mlprogram.entrypoint.evaluate(
     output_dir=output_dir,
     valid_dataset=valid_dataset,
     model=model,
-    synthesizer=synthesizer,
+    synthesizer=mlprogran.sythesizers.SynthesizerWithTimeout(
+        synthesizer=synthesizer,
+        timoeut_sec=params.evaluate_timeout_sec,
+    ),
     metrics=metrics,
     top_n=params.metric_top_n,
     device=device,
