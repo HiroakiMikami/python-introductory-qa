@@ -3,6 +3,8 @@ from setuptools import find_packages, setup
 
 requires = [
     "mlprogram @ git+https://github.com/HiroakiMikami/mlprogram.git@bbd446faaba5aac4cfc654a03df00b7ae28241ea"
+    "transformers==3.3.1",
+    "scikit-learn==0.23.2",
 ]
 
 extras = {
