@@ -23,6 +23,19 @@ transform = mlprogram.functools.Sequence(
         ],
     ),
 )
+collate_fn = mlprogram.functools.Compose(
+    funcs=collections.OrderedDict(
+        items=[
+            [
+                "transform",
+                mlprogram.functools.Map(
+                    func=transform,
+                ),
+            ],
+            ["collate", collate.collate],
+        ],
+    ),
+)
 optimizer = torch.optim.Optimizer(
     optimizer_cls=torch.optim.Adam(),
     model=model,
@@ -57,19 +70,7 @@ main = mlprogram.entrypoint.train_supervised(
     ),
     metric=params.metric,
     threshold=params.metric_threshold,
-    collate=mlprogram.functools.Compose(
-        funcs=collections.OrderedDict(
-            items=[
-                [
-                    "transform",
-                    mlprogram.functools.Map(
-                        func=transform,
-                    ),
-                ],
-                ["collate", collate.collate],
-            ],
-        ),
-    ),
+    collate=collate_fn,
     batch_size=params.batch_size,
     length=mlprogram.entrypoint.train.Iteration(
         n=params.n_iteration,
