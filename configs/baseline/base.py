@@ -17,7 +17,7 @@ params = {
     "metric_top_n": [1, 5, 10],
     "metric_threshold": 1.0,
     "metric": "bleu@5",
-    "n_evaluate_process": 2,
+    "n_evaluate_process": None,
     "train_timeout_sec": 30,
     "evaluate_timeout_sec": 120,
 }
