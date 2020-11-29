@@ -2,7 +2,7 @@ import os
 from setuptools import find_packages, setup
 
 requires = [
-    "mlprogram @ git+https://github.com/HiroakiMikami/mlprogram.git@bbd446faaba5aac4cfc654a03df00b7ae28241ea",
+    "mlprogram @ git+https://github.com/HiroakiMikami/mlprogram.git@d6ff46928b64edd6df2d2c031b5ef245d9d0101f",
     "transformers==3.3.1",
     "scikit-learn==0.23.2",
 ]
