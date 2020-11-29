@@ -63,9 +63,9 @@ main = mlprogram.entrypoint.train_supervised(
     ),
     evaluate=mlprogram.entrypoint.EvaluateSynthesizer(
         dataset=test_dataset,
-        synthesizer=mlprogran.sythesizers.SynthesizerWithTimeout(
+        synthesizer=mlprogram.synthesizers.SynthesizerWithTimeout(
             synthesizer=synthesizer,
-            timoeut_sec=params.train_timeout_sec,
+            timeout_sec=params.train_timeout_sec,
         ),
         metrics=metrics,
         top_n=params.metric_top_n,
