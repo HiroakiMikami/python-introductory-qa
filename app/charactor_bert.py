@@ -48,16 +48,20 @@ class Extractor(torch.nn.Module):
             os.path.join("pretrained-models", "bert-base-uncased"))
 
     def forward(self, env):
-        seqence_ouptut, pooled_output = self.model(
-            input_ids=env.states["input_ids"],
-            attention_mask=env.states["input_mask"],
-            token_type_ids=env.states["segment_ids"])
-        padded_sequence_output = PaddedSequenceWithMask(
-            seqence_ouptut.permute(1, 0, 2),
-            env.states["input_mask"].permute(1, 0))
-        # TODO should we use pooled_output?
-        env.states["nl_query_features"] = padded_sequence_output
-        env.states["reference_features"] = padded_sequence_output
+        prev_mode = self.training
+        self.eval()
+        with torch.no_grad():
+            seqence_ouptut, pooled_output = self.model(
+                input_ids=env.states["input_ids"],
+                attention_mask=env.states["input_mask"],
+                token_type_ids=env.states["segment_ids"])
+            padded_sequence_output = PaddedSequenceWithMask(
+                seqence_ouptut.permute(1, 0, 2),
+                env.states["input_mask"].permute(1, 0))
+            # TODO should we use pooled_output?
+            env.states["nl_query_features"] = padded_sequence_output
+            env.states["reference_features"] = padded_sequence_output
+        self.train(mode=prev_mode)
         return env
 
 

@@ -36,9 +36,9 @@ collate_fn = mlprogram.functools.Compose(
         ],
     ),
 )
-optimizer = Adam(
+optimizer = torch.optim.Optimizer(
+    optimizer_cls=torch.optim.Adam(),
     model=model,
-    lr=0.001,
 )
 main = mlprogram.entrypoint.train_supervised(
     workspace_dir=os.path.join(args=[base_output_dir, "workspace"]),
